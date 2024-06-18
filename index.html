@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+   <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Elemental Wonders</title>
+  
+  
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <img src="img/celebration.jpg" alt="Celebration Image" id="my-image">
+        <p id="thanks-modal-content">Thank you for your support!</p>
+        <!-- button here (stretch feature) -->
+      </div>
+      
+    </div>
+
+  </div>
+  
+  <img  id= "logo-img" src="img/pexels-archie-binamira-913215.jpg" alt="Logo" />
+  <div class="header-container">
+      <h1>Elemental Wonders</h1>
+      <h2>Exploring the Elemental Bond</h2> 
+      <div id="header-container">
+        <div class="header-left">
+          <button onclick="location.href='#google-maps-section';">Explore the Map</button>
+        </div>
+        <div class="header-right">
+          <button onclick="location.href='#information-section';">Discover More</button>
+        </div>
+      </div>
+      
+
+  </div>
+
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#" onclick="scrollToTop()">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#discover">Discover</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li ><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+
+
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+    
+  <!-- YOUTUBE VIDEO -->
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jAebfIiXllY?si=tILWNqke3GnHSDmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  
+  <p>
+    <div id="about">
+    <h3>What is Elemental Wonders?</h3>
+    Discover the timeless adventure of nature's elemental wonders, where every path leads to a new discovery and every moment is a celebration of the earth's beauty. "Elemental Wonders" revolves around the growing disconnect between individuals and the natural world in an age dominated by technological advancements. As people immerse themselves more into a digital existence, their interaction with natural settings diminishes. This separation presents a multifaceted issue: it distances us from appreciating the inherent beauty of the environment and potentially weakens our commitment to its preservation. By neglecting to experience the outdoors, there is a risk of underestimating the importance of environmental conservation and personal well-being that nature supports. "Elemental Wonders" responds to this problem by providing an accessible means for people to reconnect with various natural elements, encouraging exploration and appreciation of the natural world, which is essential for fostering a harmonious relationship with our planet.</p>
+      </div>
+
+  <!--- Impact --->
+  <h2 id="header-left">Impact!</h2>
+
+  <div class="workSpace-container revealable">
+    <img id="header-img" src="img/people-in-booths.jpg" />
+    <h3>Work Spaces</h3>
+    <p>Surrounded by the hum of technology, individuals sit enclosed in modern pods, a scene devoid of nature's touch, reflecting our era's silent swap of green canopies for sterile cubicles.</p>
+  </div>
+
+  <div class="classroom-container revealable">
+    <img id="header-img" src="img/student-classrooms.jpg" />
+    <h3>Classrooms</h3>
+    <p>Engrossed in the glow of screens, the children are separated from the profound benefits and grounding experiences only nature can provide.</p>
+  </div>
+  
+  <section id="information-section">
+    <!-- Content for Information section -->
+    <div class="petition revealable" id="petition">
+
+        <h2>Sign Our Petition 📢</h2>
+        <div class="petition-container">
+
+
+          <div class="petition-para">
+            <h4>🌿 Take a Stand for Nature and Well-being! 🌿</h4>
+            Are you tired of the daily grind in a technology-obsessed world that disconnects us from the beauty of nature? Picture a world where children play under the shade of trees instead of neon lights, where individuals find solace in the gentle rustle of leaves instead of the hum of devices. Join us in reclaiming our connection to the Earth and its life-giving elements. Together, we can make a difference by supporting initiatives that promote outdoor experiences, nature education, and environmental conservation. Let's break free from the confines of sterile cubicles and artificial spaces, and embrace the wonders of the natural world. Stand with us in advocating for a healthier, more balanced lifestyle that nurtures both the planet and our well-being. 
+            <h4>🌱 Act now for a greener, brighter tomorrow! 🌱</h4>
+            The Environmental Justice For All Act seeks to address environmental injustices by prohibiting discrimination in federal laws or programs based on race, color, or national origin, requiring agencies to assess potential impacts on marginalized communities, promoting safer chemical alternatives in consumer products, and enhancing access to park and recreational opportunities in urban areas. Stand up for environmental justice and equity by adding your voice to support this crucial legislation. Sign the petition today to ensure a more just and sustainable future for all!
+          </div>
+
+          <div class="signatures">
+            <p>🖊️ Emily Jackson from Seattle, Washington supports this.</p>
+            <p>🖊️ Alex Chen from San Francisco, California supports this.</p>
+            <p>🖊️ Maya Patel from Chicago, Illinois supports this.</p>
+          </div>
+
+        </div>
+
+      <!--- Sign Petition Form --->
+      <form id="sign-petition" title="sign-petition">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="hometown">Hometown:</label>
+        <input type="text" id="hometown" name="hometown">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </form>
+
+       <!--- Sign Now Button --->
+  <button id="sign-now-button">Sign Now</button>
+
+
+    </div>
+  </section>
+
+    
+
+  <h1> Explore Nature's Elements</h1>
+
+  <table>
+    <tr>
+      <td>
+        <p class="body-font">Water</p>
+        <select multiple>
+          <option value="None">None</option>
+          <option value="Waterfalls">Waterfalls</option>
+          <option value="Rivers/Streams">Rivers/Streams</option>
+          <option value="Lakes">Lakes</option>
+          <option value="Ponds">Ponds</option>
+          <option value="Oceans">Oceans</option>
+          <option value="Swamps">Swamps</option>
+          <option value="Glaciers">Glaciers</option>
+          <option value="Coral Reefs">Coral Reefs</option>
+          <option value="Hot Springs">Hot Springs</option>
+          
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="body-font">Earth</p>
+        <select multiple>
+          <option value="None">None</option>
+          <option value="Hiking Trails">Hiking Trails</option>
+          <option value="National Parks">National Parks</option>
+          <option value="Botanical Gardens">Botanical Gardens</option>
+          <option value="Hiking Trails">Hiking Trails</option>
+          <option value="Beaches">Beaches</option>
+          <option value="Campgrounds">Campgrounds</option>
+          <option value="Parks">Parks</option>
+          <option value="BoardWalks">BoardWalks</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="body-font">Fire</p>
+        <select multiple>
+          <option value="None">None</option>
+          <option value="Campfires">Campfires</option>
+          <option value="Volcanos">Volcanos</option>
+          <option value="Sunset/Sunrise Viewing Locations">Sunset/Sunrise Viewing Locations</option>
+          <option value="Lantern Festivals"">Lantern Festivals</option>
+          <option value="Barbecues">Fireworks</option>
+          
+          
+          
+          
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="body-font">Air</p>
+        <select multiple>
+          <option value="None">None</option>
+          <option value="Paragliding Sites">Paragliding Sites</option>
+          <option value="Hot Air Balloon Rides">Hot Air Balloon Rides</option>
+          <option value="Skydiving">Skydiving</option>
+          <option value="High-Altitude Hiking Trails">High-Altitude Hiking Trails</option>
+          
+          
+        </select>
+      </td>
+    </tr>
+  </table>
+  
+  <button> Search</button>
+  
+  <p class="park-link">Purchase entrance pass in order to access the park!</p>
+  <div>
+    <a class="park-link" href="https://www.nps.gov/yell/planyourvisit/fees.htm#entrance-passes">
+      <article>
+        <h6>Yellowstone Tickets</h6>
+      </article>
+    </a>
+    <a class="park-link" href="https://www.nps.gov/yose/planyourvisit/fees.htm#entrance-passes">
+      <article>
+        <h6>Yosemite Tickets</h6>
+      </article>
+    </a>
+  </div>
+   
+  <!-- DIFFERENT SECTIONS FOR LATER-->
+    <div id="discover">
+  <section id="google-maps-section">
+    <!-- Content for Google Maps section -->
+    <h2>Google Maps</h2>
+    <!-- Embed Google Maps or other relevant content here -->
+  </section>
+    </div>
+
+  
+ 
+  
+
+
+
+
+
+
+
+  
+    <script src="index.js"></script>
+</body>
+
+</html>
