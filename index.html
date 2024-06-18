@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width">
    <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" href="style.css">
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-q1bioECErhMjbYkUiF84dOXgttjaDs8&callback=initialize&libraries=places">
-    </script>
+  
   <title>Elemental Wonders</title>
   
   
@@ -233,9 +231,20 @@
   </section>
     </div>
 
-    <div id="map" style="height: 400px; width: 100%;"></div>
+    <div id="map" style="height: 100%; width: 100%; position: absolute"></div>
  
-  
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-q1bioECErhMjbYkUiF84dOXgttjaDs8&callback=initMap"
+    async defer></script>
 
 
 
