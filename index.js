@@ -121,4 +121,18 @@ function scaleImage() {
   modalImage.style.transform = `scale(${scaleFactor})`;
 }
 
+//Google Map initialization
+function initialize() {
+  var mapOptions = {
+    zoom: 10,
+    center: { lat: 40.7128, lng: -74.0060 } // Example coordinates for New York City
+  };
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: { lat: 40.7128, lng: -74.0060 }, // Example coordinates
+    map: map,
+    title: 'Hello World!'
+  });
+}
 
